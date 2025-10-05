@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tend - Support & Help</title>
+    <meta name="description" content="Get support for Tend - chronic illness tracking made simple. Technical help, billing support, and app guidance.">
+    <meta name="keywords" content="Tend, chronic illness, symptom tracking, health app, support, help">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #F5F5F7;
+            color: #1D1D1F;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #4A9B9B 0%, #5EADAD 100%);
+            border-radius: 20px;
+            color: white;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .header .tagline {
+            font-size: 1.1rem;
+            opacity: 0.95;
+            font-weight: 400;
+        }
+        
+        .section {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        
+        .section h2 {
+            color: #4A9B9B;
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+        .section h3 {
+            color: #1D1D1F;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin: 20px 0 12px 0;
+            padding-left: 12px;
+            border-left: 3px solid #4A9B9B;
+        }
+        
+        .support-button {
+            background: linear-gradient(135deg, #4A9B9B 0%, #5EADAD 100%);
+            color: white;
+            padding: 14px 28px;
+            border-radius: 10px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px 10px 10px 0;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .support-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(74, 155, 155, 0.3);
+        }
+        
+        .email-button {
+            background: white;
+            color: #4A9B9B;
+            padding: 14px 28px;
+            border-radius: 10px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px 10px 10px 0;
+            font-weight: 500;
+            border: 2px solid #4A9B9B;
+            transition: all 0.3s ease;
+        }
+        
+        .email-button:hover {
+            background: #4A9B9B;
+            color: white;
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 12px 0;
+        }
+        
+        li {
+            padding: 8px 0;
+            padding-left: 28px;
+            position: relative;
+            color: #666;
+        }
+        
+        li:before {
+            content: "•";
+            position: absolute;
+            left: 12px;
+            color: #4A9B9B;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .info-box {
+            background: #F0F8F8;
+            border-left: 4px solid #4A9B9B;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        
+        .privacy-section {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            margin: 40px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        
+        .privacy-section h2 {
+            color: #4A9B9B;
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        
+        .privacy-section h3 {
+            color: #1D1D1F;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 30px 0 12px 0;
+        }
+        
+        .privacy-section h4 {
+            color: #4A9B9B;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 20px 0 10px 0;
+        }
+        
+        .privacy-section p {
+            margin: 12px 0;
+            color: #1D1D1F;
+        }
+        
+        .privacy-section ul {
+            margin: 12px 0 20px 0;
+        }
+        
+        .last-updated {
+            color: #86868B;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #86868B;
+            margin-top: 50px;
+            border-top: 1px solid #D2D2D7;
+        }
+        
+        a {
+            color: #4A9B9B;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .support-button, .email-button {
+                width: 100%;
+                text-align: center;
+                margin: 10px 0;
+            }
+            
+            .privacy-section {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Tend Support</h1>
+            <p class="tagline">Chronic illness tracking made simple</p>
+        </div>
+        
+        <div class="section">
+            <h2>Get Help</h2>
+            <p>Having issues with Tend? Need help with tracking or features? We're here to help you manage your health better.</p>
+            
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4m_nzwDmdaERXlZr2bAsVh8qmGp_kjTqUj0MiClnqi4-u6Q/viewform?usp=dialog" class="support-button">Submit Support Request</a>
+            <a href="mailto:help.sanai@gmail.com" class="email-button">Email Support</a>
+        </div>
+        
+        <div class="section">
+            <h2>Common Issues</h2>
+            
+            <h3>App Not Loading</h3>
+            <ul>
+                <li>Force close and restart Tend</li>
+                <li>Check for app updates in App Store</li>
+                <li>Restart your device</li>
+                <li>Ensure iOS 15.0 or later</li>
+            </ul>
+            
+            <h3>Tracking Issues</h3>
+            <ul>
+                <li>Pull down to refresh your logs</li>
+                <li>Verify you're logged into the correct account</li>
+                <li>Check Apple Health permissions</li>
+                <li>Force close and reopen if data isn't saving</li>
+            </ul>
+            
+            <h3>Apple Health Sync</h3>
+            <ul>
+                <li>Enable Apple Health in Settings → Tend → Health</li>
+                <li>Grant permissions for sleep, steps, heart rate</li>
+                <li>Check that Health app has recent data</li>
+                <li>Restart both apps if sync fails</li>
+            </ul>
+            
+            <h3>Subscription & Premium</h3>
+            <ul>
+                <li>Managed through App Store subscriptions</li>
+                <li>Restore purchases in app settings</li>
+                <li>Contact Apple Support for billing issues</li>
+                <li>Email us for account problems</li>
+            </ul>
+        </div>
+        
+        <div class="info-box">
+            <h3>Privacy & Your Data</h3>
+            <p>Your health data is stored locally on your device by default. Optional cloud backup is encrypted. We never sell your data. You can export or delete your information anytime. <a href="#privacy">Read full privacy policy below</a>.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Contact Us</h2>
+            <p><strong>Email:</strong> <a href="mailto:help.sanai@gmail.com">help.sanai@gmail.com</a></p>
+            <p><strong>Support Form:</strong> <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4m_nzwDmdaERXlZr2bAsVh8qmGp_kjTqUj0MiClnqi4-u6Q/viewform?usp=dialog">Submit detailed request</a></p>
+            <p><strong>Response Time:</strong> 24-48 hours</p>
+        </div>
+        
+        <!-- PRIVACY POLICY SECTION -->
+        <div class="privacy-section" id="privacy">
+            <h2>Privacy Policy for Tend</h2>
+            <p class="last-updated">Last updated: October 5, 2025</p>
+            
+            <h3>Our Commitment to Your Privacy</h3>
+            <p>At Tend, we believe your health data belongs to you. We've built our app with privacy at its core, ensuring your personal information remains private and secure while helping you manage your chronic illness effectively.</p>
+            
+            <h3>What We DON'T Do</h3>
+            <ul>
+                <li>We DO NOT collect, store, or access your condition tracking data on any servers</li>
+                <li>We DO NOT upload your health information to the cloud without your explicit consent</li>
+                <li>We DO NOT share or sell your data with third parties</li>
+                <li>We DO NOT track your personal health metrics remotely</li>
+            </ul>
+            
+            <h3>How Your Data is Stored</h3>
+            
+            <h4>Local Storage Only</h4>
+            <p>All your personal health information (condition logs, severity ratings, notes, and health metrics) is stored exclusively on your device using local storage (Hive database). This means:</p>
+            <ul>
+                <li>Your data never leaves your phone by default</li>
+                <li>Only you can access your personal information through the app</li>
+                <li>If you delete the app, all locally stored data is permanently removed</li>
+                <li>You control whether to enable optional encrypted cloud backup</li>
+            </ul>
+            
+            <h4>Authentication Data</h4>
+            <p>We only collect minimal information required for app functionality:</p>
+            <ul>
+                <li>Email address (for authentication only)</li>
+                <li>Subscription status (to enable premium features)</li>
+                <li>Basic usage analytics (app crashes, performance metrics)</li>
+            </ul>
+            <p>This data is securely managed through Firebase Authentication and is never linked to your personal health information.</p>
+            
+            <h4>Apple Health Integration</h4>
+            <p>When you enable Apple Health sync:</p>
+            <ul>
+                <li>Data is read directly from Apple Health on your device</li>
+                <li>No health data is transmitted to our servers</li>
+                <li>You can revoke permissions at any time in iOS Settings</li>
+                <li>We only request access to metrics relevant to chronic illness tracking</li>
+            </ul>
+            
+            <h3>Your Control and Responsibility</h3>
+            <ul>
+                <li>You have complete control over your data</li>
+                <li>You may choose to share information with others at your discretion</li>
+                <li>We are not responsible for data you choose to share outside the app</li>
+                <li>You can request account deletion by contacting help.sanai@gmail.com</li>
+                <li>You can immediately delete all your data by uninstalling the app</li>
+            </ul>
+            
+            <h3>Data Deletion</h3>
+            <p>You can delete your data in two ways:</p>
+            <p><strong>Immediate deletion:</strong> Uninstall the app from your device</p>
+            <p><strong>Account deletion:</strong> Submit a request to <a href="mailto:help.sanai@gmail.com">help.sanai@gmail.com</a> with subject line "Tend Account Deletion"</p>
+            <p>Upon receiving your deletion request, we will:</p>
+            <ul>
+                <li>Remove your authentication data from Firebase</li>
+                <li>Cancel any active subscriptions</li>
+                <li>Delete any associated account information</li>
+            </ul>
+            
+            <h3>Third-Party Services</h3>
+            <p>We use the following services with minimal data sharing:</p>
+            <ul>
+                <li><strong>Firebase Authentication</strong> (for login and account management)</li>
+                <li><strong>Payment processors</strong> (RevenueCat, Apple App Store for subscriptions)</li>
+                <li><strong>Firebase Analytics</strong> (for app performance monitoring)</li>
+            </ul>
+            <p>These services have their own privacy policies and handle only the minimum data required for their functions.</p>
+            
+            <h3>Medical Disclaimer</h3>
+            <p>Tend is designed to help you track and manage chronic illness symptoms. We:</p>
+            <ul>
+                <li>Do not provide medical advice or diagnosis</li>
+                <li>Do not replace professional healthcare services</li>
+                <li>Recommend consulting healthcare professionals for medical decisions</li>
+                <li>Are not responsible for health outcomes based on app usage</li>
+            </ul>
+            
+            <h3>International Users and Compliance</h3>
+            
+            <h4>GDPR Compliance (European Users)</h4>
+            <p>If you are located in the European Economic Area (EEA), you have certain data protection rights:</p>
+            <ul>
+                <li>Right to access your data</li>
+                <li>Right to rectification</li>
+                <li>Right to erasure</li>
+                <li>Right to restrict processing</li>
+                <li>Right to data portability</li>
+                <li>Right to object</li>
+            </ul>
+            <p>Since we don't store personal health data on servers, most of these rights are automatically fulfilled by our local-only storage approach.</p>
+            
+            <h4>CCPA Compliance (California Users)</h4>
+            <p>If you are a California resident, you have the right to:</p>
+            <ul>
+                <li>Know what personal information is collected</li>
+                <li>Know whether your personal information is sold or disclosed</li>
+                <li>Say no to the sale of personal information</li>
+                <li>Access your personal information</li>
+                <li>Request deletion of your personal information</li>
+            </ul>
+            <p>We do not sell personal information to third parties.</p>
+            
+            <h3>Data Security</h3>
+            <p>While we don't store your personal health data on our servers, we implement security measures for the data we do collect:</p>
+            <ul>
+                <li>Secure authentication through Firebase</li>
+                <li>Secure payment processing through official app stores</li>
+                <li>Regular security updates and monitoring</li>
+                <li>Optional encrypted cloud backup for your health data</li>
+            </ul>
+            
+            <h3>Changes to This Policy</h3>
+            <p>We may update this privacy policy as needed. We will notify you of any material changes by:</p>
+            <ul>
+                <li>Updating the "Last updated" date</li>
+                <li>Posting notifications within the app</li>
+                <li>Sending email notifications for significant changes</li>
+            </ul>
+            
+            <h3>Contact Us</h3>
+            <p>If you have questions about this privacy policy or our privacy practices, please contact us at:</p>
+            <p><strong>Email:</strong> <a href="mailto:help.sanai@gmail.com">help.sanai@gmail.com</a><br>
+            <strong>Subject line:</strong> "Tend Privacy Question"</p>
+            <p>For data deletion requests, please use subject line: "Tend Account Deletion"</p>
+            
+            <h3>Consent</h3>
+            <p>By using Tend, you consent to our privacy policy and agree to its terms.</p>
+        </div>
+        
+        <div class="footer">
+            <p><strong>Tend</strong> - Version 1.0.0<br>
+            <em>"Chronic illness tracking made simple"</em><br>
+            © 2025 Tend. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
